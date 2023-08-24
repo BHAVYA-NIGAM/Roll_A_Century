@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Roll A Century</title>
+  </head>
+  <body>
+    <div class="overlay hidden">
+      <div class="instruction">
+        <button class="close">&times;</button>
+
+        <h2 class="instruction-heading">Instruction</h2>
+
+        <p class="instrution-sub-heading">
+          How To Play This Game:
+        </p>
+
+        <p class="instructions">
+          1. Players take turns rolling the dice.
+        </p>
+
+        <p class="instructions">
+          2. Players may roll the dice as many times as they like on their turn.
+        </p>
+
+        <p class="instructions">
+           3. Players may declare "Hold" at any time during their turn. By declaring "Hold", that player gets the points up to that point and the turn moves to the next player.
+        </p> 
+
+        <p class="instructions">
+          4. If player roll "1", then there Current Points will become 0 and other player rolls.
+        </p>  
+
+        
+        <p class="instructions">
+          5. If the total roll is less than 100 points, the player gets a point.
+        </p>
+        <p class="instructions"> 
+          6. If the score exceeds 100 points, the player wins.
+        </p>
+        
+      </div>
+    </div>
+    <header>
+      <button class="btn-instruction btn">Instruction</button>
+      <h1 class="heading">Roll A Century</h1>
+    </header>
+
+    <main>   
+      
+      <section class="player player0 player-active">
+        <h2 class="playerName" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">10</p>
+        <div class="current">
+          <p class="current-text">CURRENT</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+
+      <section class="player player1">
+        <h2 class="playerName" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">10</p>
+        <div class="current">
+          <p class="current-text">CURRENT</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+      
+      <img src="images/dice-1.png" alt="Playing dice" class="dice">
+      <button class="btn btn-new-game">&#8635 New Game</button>
+      <button class="btn btn-roll-dice">🎲 Roll Dice</button>
+      <button class="btn btn-hold">📥 Hold</button>
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
